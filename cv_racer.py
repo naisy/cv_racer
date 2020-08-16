@@ -253,7 +253,7 @@ def cv_racer(img, steering_icon, steering, throttle, max_throttle, x_meter, y_me
         steering_angle = -1*max_steering_angle
 
     # set steering. -1.0 to 1.0
-    steering = (float)steering_angle/(float)self.max_steering_angle
+    steering = float(steering_angle)/float(max_steering_angle)
 
 
     """
